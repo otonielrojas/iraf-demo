@@ -17,4 +17,4 @@ This repository demonstrates IRAF in action: a minimal set of Markdown blueprint
 
 **Demo status**: After 3–5 iterations the page becomes production-ready with recursion diagram, architecture, and call-to-action.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_API_ID/deploy-status)](https://app.netlify.com/sites/YOUR_SITE_NAME/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_API_ID/deploy-status)](https://app.netlify.com/sites/iraf-demo/deploys)
