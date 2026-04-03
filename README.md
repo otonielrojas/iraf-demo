@@ -69,6 +69,7 @@ Begin now.
 
 - Iteration 0 – Initial bootstrap (score: N/A)
 - Iteration 1 – Score: 89/100 | Full landing page with hero image, trust narrative, Mermaid IRAF loop diagram, feature grid, CTA, and footer with UTC timestamp. Missing: footer timestamp was initially absent; trust message could be strengthened with scoring weight details.
+- Iteration 2 – Score: 92/100 | Added scoring transparency section (40/40/20 weights), live UTC timestamp in footer via JS, updated iteration/score values. Loop converged — passed minimum threshold.
 
 **Full commit history:** https://github.com/otonielrojas/iraf-demo/commits/master
 

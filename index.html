@@ -107,6 +107,34 @@ graph LR
         </div>
       </section>
 
+      <!-- Scoring Transparency Section -->
+      <section class="bg-gradient-to-br from-purple-900/10 via-zinc-900/30 to-cyan-900/10 border border-zinc-800 rounded-2xl p-10">
+        <h3 class="text-3xl font-bold mb-3 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          How the Evaluator Scores
+        </h3>
+        <p class="text-zinc-500 mb-8 text-center max-w-xl mx-auto">
+          Every iteration is judged by an independent Evaluator against the constitution in <code class="text-cyan-400 bg-zinc-800 px-1.5 py-0.5 rounded text-sm">clauses.md</code>. The scoring weights are public and immutable:
+        </p>
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="text-center p-6 bg-zinc-900/50 rounded-xl border border-zinc-800">
+            <div class="text-4xl font-extrabold text-cyan-400 mb-2">40%</div>
+            <h4 class="text-lg font-semibold text-white mb-1">Technical Correctness</h4>
+            <p class="text-zinc-500 text-sm">Does the code run? Is Mermaid rendering? Are CDN scripts loaded correctly?</p>
+          </div>
+          <div class="text-center p-6 bg-zinc-900/50 rounded-xl border border-zinc-800">
+            <div class="text-4xl font-extrabold text-purple-400 mb-2">40%</div>
+            <h4 class="text-lg font-semibold text-white mb-1">Trust &amp; Clarity</h4>
+            <p class="text-zinc-500 text-sm">Is the human-AI collaboration message clear? Is transparency and auditability communicated?</p>
+          </div>
+          <div class="text-center p-6 bg-zinc-900/50 rounded-xl border border-zinc-800">
+            <div class="text-4xl font-extrabold text-indigo-400 mb-2">20%</div>
+            <h4 class="text-lg font-semibold text-white mb-1">Visual Polish</h4>
+            <p class="text-zinc-500 text-sm">Gradients, layout, responsiveness, hero image usage, and overall design quality.</p>
+          </div>
+        </div>
+        <p class="text-zinc-600 text-xs text-center mt-6">Minimum passing score: 90/100 · Maximum iterations per bootstrap: 5</p>
+      </section>
+
       <!-- Feature Grid -->
       <section>
         <h3 class="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -182,9 +210,9 @@ graph LR
       </div>
       
       <div class="font-mono bg-zinc-900/50 px-4 py-2 rounded-lg border border-zinc-800">
-        Iteration: <span class="text-cyan-400" id="current-iteration">1</span> | 
-        Score: <span class="text-purple-400" id="current-score">89/100</span> |
-        <span class="text-zinc-500" id="utc-timestamp">2026-04-03T14:55:05Z</span>
+        Iteration: <span class="text-cyan-400" id="current-iteration">2</span> | 
+        Score: <span class="text-purple-400" id="current-score">92/100</span> |
+        <span class="text-zinc-500" id="utc-timestamp"></span>
       </div>
     </footer>
   </div>
@@ -192,6 +220,11 @@ graph LR
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    (function updateTimestamp() {
+      var el = document.getElementById('utc-timestamp');
+      if (el) el.textContent = new Date().toISOString().replace(/\.\d{3}/, '');
+      setTimeout(updateTimestamp, 1000);
+    })();
   </script>
 </body>
 </html>
