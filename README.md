@@ -13,6 +13,15 @@ This repository demonstrates IRAF in action: a minimal set of Markdown blueprint
 4. Evaluator scores the result.
 5. If score < 90, they refine the blueprints **and** the page → recursion loop.
 
+### 📈 The Evolution Log
+IRAF is a living system. Every iteration represents a self-evaluation and a recursive improvement cycle.
+
+* **Current Framework Version:** [Agent to update]
+* **Latest Evaluator Score:** [Agent to update]/100
+* **Full History:** [View the Audit Trail (Commit History)](https://github.com/otonielrojas/iraf-demo/commits/main)
+
+> **Note:** The "Architect" agent is strictly governed by `clauses.md`. If the score drops, the agent must refine the blueprints before the next deployment.
+
 **Try it yourself** – open this repo in Claude Code or Cursor and run the bootstrap prompt below.
 
 **Demo status**: After 3–5 iterations the page becomes production-ready with recursion diagram, architecture, and call-to-action.

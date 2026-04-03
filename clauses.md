@@ -13,6 +13,10 @@
 - Maintain index.html at root for auto-deployment.
 - Ensure all assets (scripts/fonts) are loaded via CDN to avoid local build dependencies.
 - The Frontend Engineer MUST update the footer with the current UTC timestamp and the Evaluator's score on every commit.
+
+## HTML Management 
+- When updating index.html, the agent MUST keep all content within the AGENT_GENERATED_CONTENT and AGENT_STATUS_ANCHOR comments. 
+-Do not modify the Header or the 'Get Started' button unless explicitly directed by a score-driven refinement.
   
 ## Success Criteria (Evaluator)
 - 40% Technical/Functional correctness (Does the code run? Is Mermaid rendering?).
