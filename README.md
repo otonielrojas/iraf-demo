@@ -8,6 +8,9 @@ This repository is a living demonstration of the **Iterative Refinement Agentic 
 
 **Live Demo:** https://iraf-demo.netlify.app
 
+**Watch the full bootstrap run (6 min raw video):**  
+[![Watch the video](https://img.youtube.com/vi/h0OIUTcCtGM/maxresdefault.jpg)](https://www.youtube.com/watch?v=h0OIUTcCtGM)
+
 ---
 
 ### How It Works
