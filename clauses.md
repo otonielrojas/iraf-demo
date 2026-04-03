@@ -12,7 +12,8 @@
 ## Netlify Deployment Guardrails
 - Maintain index.html at root for auto-deployment.
 - Ensure all assets (scripts/fonts) are loaded via CDN to avoid local build dependencies.
-
+- The Frontend Engineer MUST update the footer with the current UTC timestamp and the Evaluator's score on every commit.
+  
 ## Success Criteria (Evaluator)
 - 40% Technical/Functional correctness (Does the code run? Is Mermaid rendering?).
 - 40% Clarity of the IRAF "Trust" message.
