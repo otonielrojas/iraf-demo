@@ -5,7 +5,7 @@
 - NO EXTERNAL CALLS: No new npm packages or external API requests.
 - MAX ITERATIONS: 5 iterations per bootstrap.
 - GIT PROTOCOL: Every change must be committed to the 'master' branch.
-- DOCUMENTATION: The Architect MUST update the README.md Evolution Log (Version and Score) in every iteration.
+- DOCUMENTATION: The Architect MUST update the README.md Evolution Log in every iteration.
 - ANTI-STAGNATION: If the score does not improve for two iterations, the Architect MUST refine the blueprint files (agents.md/skills.md) before further HTML edits.
 
 ## Commit Message Format (REQUIRED)
@@ -13,15 +13,15 @@
 
 ## Netlify Deployment Guardrails
 - Maintain index.html at root for auto-deployment.
-- Ensure all assets (scripts/fonts) are loaded via CDN to avoid local build dependencies.
+- Ensure all assets (scripts) are loaded via CDN.
 - The Frontend Engineer MUST update the footer with the current UTC timestamp and the Evaluator's score on every commit.
 
 ## HTML Management 
-- When updating index.html, the agent MUST keep all content within the AGENT_GENERATED_CONTENT and AGENT_STATUS_ANCHOR comments. 
+- When updating index.html, the agent MUST keep all content within the <!-- AGENT_GENERATED_CONTENT --> and <!-- AGENT_STATUS_ANCHOR --> comments. 
 - Do not modify the Header or the 'Get Started' button unless explicitly directed by a score-driven refinement.
   
 ## Success Criteria (Evaluator)
 - 40% Technical/Functional correctness (Does the code run? Is Mermaid rendering?).
 - 40% Clarity of the IRAF "Trust" message (Focus on human-AI collaboration and transparency).
-- 20% Visual polish (Gradients, layout, responsiveness).
+- 20% Visual polish (Gradients, layout, responsiveness, hero.jpg usage).
 - MINIMUM PASSING SCORE: 90/100.

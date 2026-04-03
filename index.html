@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IRAF • Infinite Recursion Agentic Framework</title>
+  <title>IRAF • Iterative Refinement Agentic Framework</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -11,6 +11,7 @@
 
   <div class="max-w-6xl mx-auto p-8 min-h-screen flex flex-col">
     
+    <!-- Header (DO NOT MODIFY unless score requires it) -->
     <header class="text-center py-12">
       <h1 class="text-7xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent italic">
         IRAF
@@ -27,11 +28,13 @@
       </div>
     </header>
 
+    <!-- AGENT_GENERATED_CONTENT -->
     <main id="iraf-content" class="flex-grow space-y-20">
       <div class="text-center text-zinc-600 animate-pulse">
         Waiting for agentic initialization...
       </div>
-      </main>
+    </main>
+    <!-- AGENT_STATUS_ANCHOR -->
 
     <footer class="mt-20 p-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-zinc-500 text-sm gap-4">
       <div class="flex items-center gap-4">
@@ -48,8 +51,8 @@
     </footer>
   </div>
 
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
     mermaid.initialize({ startOnLoad: true, theme: 'dark' });
   </script>
 </body>
