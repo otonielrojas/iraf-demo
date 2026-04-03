@@ -29,10 +29,147 @@
     </header>
 
     <!-- AGENT_GENERATED_CONTENT -->
-    <main id="iraf-content" class="flex-grow space-y-20">
-      <div class="text-center text-zinc-600 animate-pulse">
-        Waiting for agentic initialization...
-      </div>
+    <main id="iraf-content" class="flex-grow space-y-24">
+
+      <!-- Hero Image Section -->
+      <section class="relative rounded-2xl overflow-hidden shadow-2xl shadow-purple-900/20 border border-zinc-800/50">
+        <img src="hero.jpg" alt="IRAF — Iterative Refinement Agentic Framework" class="w-full h-[420px] object-cover opacity-80" />
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-10">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            Recursion You Can Trust
+          </h2>
+          <p class="text-lg text-zinc-300 max-w-2xl leading-relaxed">
+            IRAF is a governance-first framework where AI agents plan, build, evaluate, and refine — all inside a single Git repository. Every decision is auditable. Every change is reversible.
+          </p>
+        </div>
+      </section>
+
+      <!-- Trust & Philosophy Section -->
+      <section class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h3 class="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+            Why Trust Matters in Agentic AI
+          </h3>
+          <p class="text-zinc-400 leading-relaxed mb-4">
+            Autonomous AI systems are powerful — but power without transparency is dangerous. IRAF solves this by making <strong class="text-zinc-200">every iteration visible</strong> in Git history. There are no hidden states, no opaque reasoning chains. The entire evolution of a system lives in commits, diffs, and scores.
+          </p>
+          <p class="text-zinc-400 leading-relaxed mb-4">
+            The framework enforces a <strong class="text-zinc-200">closed refinement loop</strong>: an Architect decomposes goals, a Frontend Engineer implements, a Copywriter shapes narrative, and an independent Evaluator judges quality against a constitution (<code class="text-cyan-400 bg-zinc-800 px-1.5 py-0.5 rounded text-sm">clauses.md</code>). If the score falls below the threshold, the loop iterates — automatically.
+          </p>
+          <p class="text-zinc-400 leading-relaxed">
+            This isn't just automation. It's <strong class="text-zinc-200">human-AI collaboration with a built-in audit trail</strong> — designed so humans can verify, override, or extend any decision the agents make.
+          </p>
+        </div>
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8 space-y-6">
+          <h4 class="text-xl font-semibold text-white mb-2"><i class="fas fa-shield-halved text-purple-400 mr-2"></i>Governance Principles</h4>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-cyan-400 shrink-0"></span>
+              <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Strict Containment</strong> — Agents only modify files within the repository. No external API calls, no side effects.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-purple-400 shrink-0"></span>
+              <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Scored Evaluation</strong> — Every iteration is judged against a constitutional document with weighted criteria.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-indigo-400 shrink-0"></span>
+              <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Anti-Stagnation</strong> — If scores plateau, agents must refine their own blueprints before continuing.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-green-400 shrink-0"></span>
+              <p class="text-zinc-400 text-sm"><strong class="text-zinc-200">Git-Native Logging</strong> — Every change is committed with a standardized, machine-readable message format.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mermaid Diagram Section -->
+      <section class="text-center">
+        <h3 class="text-3xl font-bold mb-3 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          The IRAF Recursion Loop
+        </h3>
+        <p class="text-zinc-500 mb-10 max-w-xl mx-auto">
+          A closed-loop system where agents autonomously plan, execute, evaluate, and refine — converging toward a score of 90 or above.
+        </p>
+        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-8 inline-block mx-auto max-w-full overflow-x-auto">
+          <pre class="mermaid">
+graph LR
+  A["🎯 User Goal"] --> B["🏗️ Architect"]
+  B --> C["⚙️ Frontend Engineer"]
+  B --> D["✍️ Copywriter"]
+  C --> E["📄 index.html"]
+  D --> E
+  E --> F["🧪 Evaluator"]
+  F -->|"Score ≥ 90"| G["✅ Commit & Deploy"]
+  F -->|"Score < 90"| B
+          </pre>
+        </div>
+      </section>
+
+      <!-- Feature Grid -->
+      <section>
+        <h3 class="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          Core Capabilities
+        </h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-purple-500/50 transition-colors group">
+            <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors">
+              <i class="fas fa-code-branch text-purple-400 text-xl"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-2">Git-Native Architecture</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">Every iteration lives in version control. No databases, no hidden state — just commits, diffs, and branches.</p>
+          </div>
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-cyan-500/50 transition-colors group">
+            <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-cyan-500/20 transition-colors">
+              <i class="fas fa-users-gear text-cyan-400 text-xl"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-2">Multi-Agent Delegation</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">Architect, Engineer, Copywriter, and Evaluator collaborate through structured roles and clear handoffs.</p>
+          </div>
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-indigo-500/50 transition-colors group">
+            <div class="w-12 h-12 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-500/20 transition-colors">
+              <i class="fas fa-scale-balanced text-indigo-400 text-xl"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-2">Constitutional Governance</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">A clauses.md constitution enforces safety rules, scoring criteria, and anti-stagnation policies.</p>
+          </div>
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-green-500/50 transition-colors group">
+            <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-500/20 transition-colors">
+              <i class="fas fa-rotate text-green-400 text-xl"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-2">Self-Improving Loop</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">Agents evaluate their own output and refine blueprints if scores stagnate — true closed-loop recursion.</p>
+          </div>
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-yellow-500/50 transition-colors group">
+            <div class="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-yellow-500/20 transition-colors">
+              <i class="fas fa-eye text-yellow-400 text-xl"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-2">Full Transparency</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">Every decision, score, and refinement is visible in Git history. Humans can audit, override, or extend at any point.</p>
+          </div>
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-rose-500/50 transition-colors group">
+            <div class="w-12 h-12 bg-rose-500/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-rose-500/20 transition-colors">
+              <i class="fas fa-bolt text-rose-400 text-xl"></i>
+            </div>
+            <h4 class="text-lg font-semibold text-white mb-2">Zero-Cost Deployment</h4>
+            <p class="text-zinc-400 text-sm leading-relaxed">Single-file HTML with CDN dependencies. Push to master, and Netlify deploys automatically — no build step required.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center bg-gradient-to-br from-purple-900/20 via-zinc-900/50 to-cyan-900/20 border border-zinc-800 rounded-2xl p-12">
+        <h3 class="text-3xl font-bold mb-4 text-white">Ready to See Recursion in Action?</h3>
+        <p class="text-zinc-400 mb-8 max-w-lg mx-auto">
+          Clone the repository, paste the bootstrap prompt in your AI IDE, and watch the agents build, evaluate, and refine — live in your Git history.
+        </p>
+        <a href="https://github.com/otonielrojas/iraf-demo"
+           class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg shadow-purple-500/20">
+          <i class="fab fa-github mr-2"></i> View on GitHub
+        </a>
+      </section>
+
     </main>
     <!-- AGENT_STATUS_ANCHOR -->
 
@@ -45,8 +182,9 @@
       </div>
       
       <div class="font-mono bg-zinc-900/50 px-4 py-2 rounded-lg border border-zinc-800">
-        Iteration: <span class="text-cyan-400" id="current-iteration">0</span> | 
-        Score: <span class="text-purple-400" id="current-score">N/A</span>
+        Iteration: <span class="text-cyan-400" id="current-iteration">1</span> | 
+        Score: <span class="text-purple-400" id="current-score">89/100</span> |
+        <span class="text-zinc-500" id="utc-timestamp">2026-04-03T14:55:05Z</span>
       </div>
     </footer>
   </div>
