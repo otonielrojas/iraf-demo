@@ -4,7 +4,9 @@
 - STRICT CONTAINMENT: Only modify files within this repository.
 - NO EXTERNAL CALLS: No new npm packages or external API requests.
 - MAX ITERATIONS: 5 iterations per bootstrap.
-- GIT PROTOCOL: Every change must be committed to the 'main' branch.
+- GIT PROTOCOL: Every change must be committed to the 'master' branch.
+- DOCUMENTATION: The Architect MUST update the README.md Evolution Log (Version and Score) in every iteration.
+- ANTI-STAGNATION: If the score does not improve for two iterations, the Architect MUST refine the blueprint files (agents.md/skills.md) before further HTML edits.
 
 ## Commit Message Format (REQUIRED)
 - Template: `[IRAF Iteration X] Score: Y/100 | Refinement: [One sentence on what changed]`
@@ -16,10 +18,10 @@
 
 ## HTML Management 
 - When updating index.html, the agent MUST keep all content within the AGENT_GENERATED_CONTENT and AGENT_STATUS_ANCHOR comments. 
--Do not modify the Header or the 'Get Started' button unless explicitly directed by a score-driven refinement.
+- Do not modify the Header or the 'Get Started' button unless explicitly directed by a score-driven refinement.
   
 ## Success Criteria (Evaluator)
 - 40% Technical/Functional correctness (Does the code run? Is Mermaid rendering?).
-- 40% Clarity of the IRAF "Trust" message.
+- 40% Clarity of the IRAF "Trust" message (Focus on human-AI collaboration and transparency).
 - 20% Visual polish (Gradients, layout, responsiveness).
 - MINIMUM PASSING SCORE: 90/100.
