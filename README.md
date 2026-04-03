@@ -1,49 +1,91 @@
-# IRAF: The Iterative Refinement Agentic Framework
+# IRAF: Iterative Refinement Agentic Framework
+
+**A Git-native, zero-cost architecture for autonomous, self-improving AI systems.**
+
+This repository is a living demonstration of the **Iterative Refinement Agentic Framework (IRAF)** — agents that autonomously plan, delegate, execute, self-evaluate, and rewrite their own blueprint files inside a standard Git repository.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f057ab39-98e6-4431-9c9e-17d9b5aae896/deploy-status)](https://app.netlify.com/projects/iraf-demo/deploys)
 
-A Git-native, 0-cost architecture for self-improving AI ecosystems. Built for transparency, auditable through every commit.
-
-**Live Demo:** [iraf-demo.netlify.app](https://iraf-demo.netlify.app/)
-
-This repository demonstrates IRAF in action: a minimal set of Markdown blueprints combined with clever meta-prompting that turns any Git repository into a self-sustaining, self-improving AI agent system.
+**Live Demo:** https://iraf-demo.netlify.app
 
 ---
 
-### ⚙️ How It Works
+### How It Works
+1. A single bootstrap prompt activates the agents in your AI IDE.
+2. Agents read the three blueprint files (`agents.md`, `skills.md`, `clauses.md`).
+3. They expand and iteratively improve the landing page (`index.html`), using `hero.jpg` and the Mermaid recursion diagram.
+4. An independent Evaluator scores the result against strict rules in `clauses.md`.
+5. If the score is below 90, the system refines the blueprints and the page — creating a true closed recursion loop.
+6. Every change is automatically committed to Git with a standardized message.
 
-1. A **Bootstrap prompt** activates the agents locally (or via CI/CD).
-2. The agents read `agents.md`, `skills.md`, and `clauses.md` to understand their bounds.
-3. They build and iteratively improve the landing page (`index.html`).
-4. An independent **Evaluator** scores the result against strict criteria.
-5. If the score is `< 90`, the system refines the blueprints **and** the code, creating a closed recursion loop.
-
----
-
-### 📈 The Evolution Log
-
-IRAF is a living system. Every iteration represents a self-evaluation and a recursive improvement cycle. 
-
-* **Current Framework Version:** [Agent to update]
-* **Latest Evaluator Score:** [Agent to update]/100
-* **Full History:** [View the Audit Trail (Commit History)](https://github.com/otonielrojas/iraf-demo/commits/master)
-
-> **Note:** The "Architect" agent is strictly governed by `clauses.md`. If the score drops, the agent must refine the blueprints before the next deployment.
+The entire system state lives in Git, making evolution transparent, auditable, and reversible.
 
 ---
 
-### 🚀 Try It Yourself
+### Prerequisites
+To get the best experience:
 
-Open this repository in your preferred AI-native IDE (like Cursor or Claude Code) and paste the following Bootstrap Prompt into the agent chat:
+1. Use an AI-native IDE with strong Git integration (recommended: Windsurf, Cursor, or Claude Code).
+2. Select a capable model (Claude Sonnet 4.6 or better recommended).
+3. Clone the repository locally and open it as a folder/project in your IDE.
+4. Ensure your IDE has permission to read/write files and run Git commands (commit & push to the `master` branch).
+5. Place `hero.jpg` in the repository root (required for the landing page).
+6. Be prepared to review and approve occasional permission prompts for file edits and Git operations (standard safety behavior in AI coding tools).
 
-```text
-Act as the IRAF Architect. Your mission is to initialize the Infinite Recursion Agentic Framework (IRAF) in this repository.
+---
 
-Step 1: Read agents.md, skills.md, and clauses.md to understand your roles, capabilities, and strict governance rules.
-Step 2: Coordinate with the Frontend Engineer to build the initial index.html using the Tailwind CDN skill.
-Step 3: Coordinate with the Copywriter to ensure the page accurately describes IRAF's vision of overcoming human resistance through Git-native recursion.
-Step 4: Have the Evaluator score the page against the criteria in clauses.md.
-Step 5: CRITICAL: Commit all changes to the 'master' branch. The commit message MUST follow this exact format: 
-[IRAF Iteration 1] Score: [SCORE]/100 | Refinement: [One sentence description]
+### Expected Outcome
+After running the bootstrap prompt (maximum 5 iterations):
 
-Goal: Reach a score of >= 90 within 5 iterations. If the score is below 90, proceed to the next iteration by refining the blueprints and the code.
+- The landing page transforms into a polished, modern design featuring the hero image, a rendered Mermaid recursion diagram, clear explanatory sections, and a live score footer.
+- Git history contains clean commits in the exact format: `[IRAF Iteration X] Score: Y/100 | Refinement: …`
+- The Evolution Log in this README is updated automatically.
+- Netlify auto-deploys the improved page.
+- Final Evaluator score reaches ≥ 90 (or as high as possible within the iteration limit).
+
+---
+
+### Quick Start (2–5 minutes)
+1. Add `hero.jpg` to the repository root if not already present.
+2. Open this repository in your AI IDE.
+3. Copy and paste the **Bootstrap Prompt** below exactly once.
+
+**Bootstrap Prompt**
+You are the IRAF Architect. Your mission is to initialize and demonstrate the Iterative Refinement Agentic Framework (IRAF) in this repository.
+Step 1: Read agents.md, skills.md, and clauses.md completely.
+Step 2: Expand index.html into a polished, modern landing page using Tailwind CDN, the hero.jpg image in the root, and the Mermaid diagram from skills.md.
+Step 3: Ensure ALL changes to index.html stay strictly within the  and  comment markers.
+Step 4: Have the Evaluator score the page against clauses.md.
+Step 5: Commit all changes to the 'master' branch using the EXACT format:
+[IRAF Iteration X] Score: Y/100 | Refinement: [one-sentence description]
+Goal: Reach a score of >= 90 within maximum 5 iterations. If below 90, refine blueprints and continue.
+Begin now.
+
+
+---
+
+### Evolution Log
+*(Automatically updated by the Evaluator after each iteration)*
+
+- Iteration 0 – Initial bootstrap (score: N/A)
+- [Real scores and refinements will appear here after the bootstrap runs]
+
+**Full commit history:** https://github.com/otonielrojas/iraf-demo/commits/master
+
+---
+
+### Troubleshooting
+- IDE asks for permission → Approve file edits and Git commits.
+- Git push fails → Run `git push` manually.
+- Score stays low after 5 iterations → Reply to the model: “Trigger next iteration as Architect”.
+- Hero image not showing → Verify the file is named exactly `hero.jpg` and committed.
+- Model appears stuck → Reply: “Continue with the IRAF bootstrap rules from clauses.md”.
+
+---
+
+### Contributing
+Fork the repository, run the bootstrap in your own domain, and share your adaptations. The framework is intentionally simple and designed to be extended for software engineering, scientific research, content systems, or any other field.
+
+The future of AI systems isn’t just written — it is iteratively refined inside your next Git repository.
+
+**Ready to see recursion in action?** Paste the Bootstrap Prompt above.
